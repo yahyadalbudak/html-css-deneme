@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        margin: 0;
+    }
+    .image{
+        height: 80px;
+        width: 50%;
+        background-color: black;
+    }
+    .menu{
+        height: 80px;
+        width: 50%;
+        background-color:black;
+    }
+    .container{
+        width: 100%;
+        height: 80px;
+        background-color: black;
+    }
+    .header{
+        display: flex;
+        width: 100%;
+        font-weight: bold;
+    }
+    .logo{
+        margin-top: 20px;
+        margin-left: 30%;
+    }
+    .order_list{
+        display:flex;
+        margin-top: 32px;
+        margin-left: 76px; 
+    }
+
+    .order_list li,a{
+        margin-right: 16px;
+        list-style-type: none;
+        color: white;
+        text-decoration: none;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    a:hover{
+        color: rgb(29, 185, 84);
+    }
+    .middle{
+        width: 100%;
+        height: 525px;
+        background: rgb(25, 230, 140);
+        text-align: center;
+        line-height: 20px;
+    }
+    .resim{
+        margin-top: 98px;
+    }
+    .spotify{
+        font-family:Helvetica, Arial, sans-serif;
+        font-weight: bolder;
+        font-size: 45px;
+    }
+    .button{
+        background-color: #ffffff;
+        padding: 15px 30px;
+        font-size: 15px;
+        border-radius: 30px;
+        border: 0px;
+        font-weight: bold;
+        margin-top: 23px;
+    }
+    .middle2{
+        width: 100%;
+        height: 250px;
+        background: white;
+    }
+    .h1{
+        text-align: center;
+        margin-top: 70px;
+        font-family:Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        line-height: 40px;
+    }
+    .uygulamalar{
+        text-align: center;
+        margin-left: 35%;
+        margin-top: 15px;
+        list-style-type: none;
+        display:flex;
+    }
+    .üçüncüsayfa{
+        width: 100%;
+        height: 500px;
+        background: rgb(34, 35, 38);
+    }
+    .resimüç{
+        margin-left: 35%;
+        margin-top: 50px;
+    }
+    .tekhesap{
+        text-align: center;
+        color:white;
+        font-family:Helvetica, Arial, sans-serif;
+        margin-top: 15px;
+    }
+    .üçüncüsayfalinkler{
+        display:inline-flex;
+        padding-left: 22%;
+        margin-top: 40px;
+        color: white; 
+        list-style-type: none;
+    }
+     .üçüncüsayfalinkler a::after{
+        font-size: 22px;
+        content: "•";
+        padding-left: 5px;
+        padding-right: 5px;
+        color: rgb(29, 185, 84);
+    }
+    .listeiçi{
+        display: inline-flex;
+        list-style-type: none;
+    }
+    .listeiçi a{
+        color: rgb(29, 185, 84);
+        
+    }
+    .sondiv{
+        width: 100%;
+        height: 500px;
+        background: black;
+        padding: 40px;
+        margin-top: 40px;
+    }
+    .divimg{
+        padding-left: 200px;
+        padding-top: 50px;
+    }
+    .container2{
+        line-height: 50px;  
+        width: 75;
+        margin: 0 auto;
+        display: flex;
+        height: 200px;
+        border:1px solid black ;
+        margin-left: 350px;
+        margin-top: -60px;
+    }
+    .box a{
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        width: 200px;
+        border: 1px solid black;
+        margin: 10px;
+    }
+    
+    .reklam{
+        display:flex;
+        font-size: small;
+        margin-left:150px;
+        padding-top: 150px;
+    }
+    .reklam a{
+        color:#919496;
+    }
+    a:hover{
+        color: green;
+    }
+    .türkiye{
+        display: flex;
+        margin-left:70%;
+        margin-top: -50px;
+        color:#919496;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="row header">
+            <div class="image">
+                <img class="logo" src="C:\Users\yahya\Desktop\salak olma ders calış ögren\indir.png" width="135" height="40">
+            </div>
+            <div class="menu">
+                <ul class="order_list">
+                    <li><a href="https://www.spotify.com/tr/premium/">Premium</a></li>
+                    <li><a href="https://support.spotify.com/">Destek</a></li>
+                    <li><a href="https://www.spotify.com/tr/download/">İndir</a></li>
+                    <li id="seperatör" role="separator">|</li>
+                    <li><a href="https://www.spotify.com/tr/signup/">Kaydol</a></li>
+                    <li><a href="https://www.spotify.com/tr/login/?continue=https%3A%2F%2Fopen.spotify.com%2F__noul__%3Fl2l%3D1%26nd%3D1">Oturum aç</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+    <div class="middle"> 
+        <div class="resim1"> 
+             <img class="resim" src="C:\Users\yahya\Desktop\salak olma ders calış ögren\Ekran görüntüsü 2022-03-14 142232.png" width="160" height="100">
+             <div class="spotify">
+                 <p>Spotify'ı İndir</p>
+             </div>
+             <p>Cihazında milyonlarca şarkı ve podcast çal.</p>
+             <button class="button" type="button">İndir</button>
+        </div>
+   </div>
+   <div class="middle2">
+    <div class="h1">
+       <h1>Müziğini cep telefonuna ve tablete de taşı.</h1>
+       <p>Telefonunda veya tabletinde dinlemek ücretsiz, kolay ve eğlencelidir.</p>
+   </div>
+<div class="middleuygulamalar">
+<ul class="uygulamalar">
+   <li><a href="https://spotify.link/h5TbcGLLkhb?label=sp_cid%3Adfb9e343-d0ec-4c7e-afd4-30951796425b" rel="noopener noreferrer" target="_blank" class="AppStoreLink-sc-1llmcrl-0 gIDRsP MobileUpsell__StyledAppleBadge-sc-1f3biua-2 gvKVKQ"><img src="https://www-growth.scdn.co/static/badges/svgs/apple/badge-tr.svg" alt="App Store'dan indir"></a></li><li></li>
+   <li><a href="https://spotify.link/T1vKH6Kr9ib?label=sp_cid%3Adfb9e343-d0ec-4c7e-afd4-30951796425b" rel="noopener noreferrer" target="_blank" class="AppStoreLink-sc-1llmcrl-0 gIDRsP MobileUpsell__StyledGoogleBadge-sc-1f3biua-3 eGJMQI"><img src="https://www-growth.scdn.co/static/badges/svgs/google/badge-tr.svg" alt="Google Play'den edin" style="margin: -8px; height: 57px;"></a></li>
+   <li><a href="https://www.microsoft.com/store/p/spotify-music/9ncbcszsjrsb?cid=spotifyweb-windows10-store-direct" rel="noopener noreferrer" target="_blank" class="AppStoreLink-sc-1llmcrl-0 gIDRsP MobileUpsell__StyledWindowsBadge-sc-1f3biua-4 iMOsjh"><img src="https://www-growth.scdn.co/static/badges/microsoft-windows/tr.png" alt="Microsoft'tan edin"></a></li> 
+</ul>
+</div>
+</div>
+<div class="üçüncüsayfa">
+    <div>
+    <img class="resimüç" src="C:\Users\yahya\Desktop\salak olma ders calış ögren\Ekran görüntüsü 2022-03-07 150727.png" width="550" height="220">
+    <h1 class="tekhesap">Tek hesapla her yerde dinle.</h1>
+    <div>
+        <ul class="üçüncüsayfalinkler">
+            <li><a>CEP TELEFONU</a></li>
+            <li><a>BİGİSAYAR</a></li>
+            <li><a>TABLET</a>  
+                <ul class="listeiçi">
+            <li><a href="https://spotify-everywhere.com/collections/car-audio">ARAÇ</a> </li>
+            <li><a href="https://spotify-everywhere.com/pages/gaming/">PlayStation<sup>®</sup></a></li>
+            <li><a href="https://spotify-everywhere.com/pages/gaming/">XBOX</a></li>
+            <li><a href="https://spotify-everywhere.com/collections/tv/">TV</a></li>
+            <li><a href="https://spotify-everywhere.com/collections/wireless-speakers/">HOPARLöR</a></li>
+            <li><a href="https://open.spotify.com/">WEB PLAYER</a></li>
+                </ul>
+        </li>
+        </ul>
+    </div>
+</div>
+<div class="sondiv">
+    <div class="divimg">
+        <img class="img" src="C:\Users\yahya\Desktop\salak olma ders calış ögren\indir.png" width="140" height="40">
+    </div>
+<div class="container2">
+    <div class="box">
+        <ul>
+            <li><a>Şirket</a></li>
+            <li><a href="https://www.spotify.com/tr/about-us/contact/">Hakkında</a></li>
+            <li><a href="https://www.lifeatspotify.com/">Kariyer</a></li>
+            <li><a href="https://newsroom.spotify.com/">For the Record</a></li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <ul>
+            <li><a>Topluluklar</a></li>
+            <li><a href="https://artists.spotify.com/">Sanatçılar İçin</a></li>
+            <li><a href="https://developer.spotify.com/">Geliştiriciler</a></li>
+            <li><a href="https://ads.spotify.com/">Reklam</a></li>
+            <li><a href="https://investors.spotify.com/">Yatırımcılar</a></li>
+            <li><a href="https://spotifyforvendors.com/">Satıcılar</a></li>
+        </ul>
+    </div>  
+
+    <div class="box">
+        <ul>
+            <li><a>Yararlı bağlantılar</a></li>
+            <li><a href="https://support.spotify.com/">Destek</a></li>
+            <li><a href="https://open.spotify.com/">Web Çalar</a></li>
+            <li><a href="https://www.spotify.com/tr/free/">Ücretsiz Mobil Uygulama</a></li>
+        </ul>
+    </div>
+</div> 
+
+<div>
+    <ul>
+        <li><a href="https://instagram.com/spotify"></a></li>
+        <li><a href="https://twitter.com/spotify" title="Twitter" class="mh-footer-primary svelte-1ad7r0v"><span role="img" aria-label="Twitter" class="mh-social-icon-twitter svelte-1ad7r0v"></span></a></li>
+        <li><span role="img" aria-label="Facebook" class="mh-social-icon-facebook svelte-1ad7r0v"></span></li>
+    </ul>
+</div>
+<div class="divreklam">
+    <ul class="reklam">
+        <li><a href="https://www.spotify.com/tr/legal/">Yasal</a></li>
+        <li><a href="https://www.spotify.com/tr/privacy/">Gizlilik Merkezi</a></li>
+        <li><a href="https://www.spotify.com/tr/legal/privacy-policy/">Gizlilik Politikası</a></li>
+        <li><a href="https://www.spotify.com/tr/legal/cookies-policy/">Tanımlama Bilgileri</a></li>
+        <li><a href="https://www.spotify.com/tr/legal/privacy-policy/#s3">Reklamlar Hakkında</a></li>
+    </ul>
+</div>
+<div>
+    <a class="türkiye" href="https://www.spotify.com/tr/select-your-country-region/"> Türkiye</a>
+    <p>© 2022 Spotify AB</p>
+</div>
+<div class="sonikonlar">
+        <a href="https://instagram.com/spotify"></a>
+        <a href="https://twitter.com/spotify" title="Twitter" class="mh-footer-primary svelte-1ad7r0v"><span role="img" aria-label="Twitter" class="mh-social-icon-twitter svelte-1ad7r0v"></span></a>
+        <a href="https://www.facebook.com/Spotify" title="Facebook" class="mh-footer-primary svelte-1ad7r0v"><span role="img" aria-label="Facebook" class="mh-social-icon-facebook svelte-1ad7r0v"></span></a>
+</div>
+</div> 
+</div>
+</body>
+</html>
